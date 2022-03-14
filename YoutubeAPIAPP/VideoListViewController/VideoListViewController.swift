@@ -8,6 +8,8 @@
 import UIKit
 
 class VideoListViewController: UIViewController {
+    
+    var searchText:String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
