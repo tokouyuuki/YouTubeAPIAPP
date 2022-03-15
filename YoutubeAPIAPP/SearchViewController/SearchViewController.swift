@@ -14,7 +14,7 @@ class SearchViewController: UIViewController {
     
     private var presenter:SearchViewPresenterInput?
     
-    func inject(presenter:SearchViewPresenterInput){
+    private func inject(presenter:SearchViewPresenterInput){
         self.presenter = presenter
     }
     
