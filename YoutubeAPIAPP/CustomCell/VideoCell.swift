@@ -6,18 +6,27 @@
 //
 
 import UIKit
+import SDWebImage
 
 class VideoCell: UITableViewCell {
+    
+    @IBOutlet weak var thumbnailImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var channelTitleLabel: UILabel!
+    
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configure(videoData data: Item){
+        
+        titleLabel.text = data.snippet.title
+        channelTitleLabel.text = data.snippet.channelTitle
+        
+        guard let url = URL(string: data.snippet.thumbnails.default.url) else {
+            thumbnailImage.image = UIImage(named: "noImage")
+            return
+        }
+        
+        thumbnailImage.sd_setImage(with: url, completed: nil)
+        
     }
     
 }
