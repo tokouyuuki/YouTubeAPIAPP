@@ -107,6 +107,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="poc-A6-Wjg"/>
                     <connections>
+                        <outlet property="tableView" destination="Oso-Cp-doY" id="6Kc-Bd-7em"/>
                         <segue destination="cPp-NZ-Oi1" kind="show" id="XdB-L8-O0g"/>
                     </connections>
                 </viewController>
@@ -114,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="1942.0289855072465" y="116.51785714285714"/>
         </scene>
-        <!--Web View Controller-->
+        <!--Player View Controller-->
         <scene sceneID="Ybx-8i-hiJ">
             <objects>
-                <viewController storyboardIdentifier="webVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cPp-NZ-Oi1" customClass="WebViewController" customModule="YoutubeAPIAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="playerVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cPp-NZ-Oi1" customClass="PlayerViewController" customModule="YoutubeAPIAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ogR-aA-jBv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,7 +7,9 @@
 
 import UIKit
 
-class WebViewController: UIViewController {
+class PlayerViewController: UIViewController {
+    
+    var videoId: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()

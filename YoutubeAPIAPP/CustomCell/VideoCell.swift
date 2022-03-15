@@ -14,18 +14,20 @@ class VideoCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var channelTitleLabel: UILabel!
     
-
+    
     func configure(videoData data: Item){
         
-        titleLabel.text = data.snippet.title
-        channelTitleLabel.text = data.snippet.channelTitle
+        let title: String = data.snippet.title ?? "---"
+        let channelTitle = data.snippet.channelTitle ?? "---"
+        titleLabel.text = title
+        channelTitleLabel.text = channelTitle
         
-        guard let url = URL(string: data.snippet.thumbnails.default.url) else {
+        guard let url = data.snippet.thumbnails.high.url else {
             thumbnailImage.image = UIImage(named: "noImage")
             return
         }
         
-        thumbnailImage.sd_setImage(with: url, completed: nil)
+        thumbnailImage.sd_setImage(with: URL(string: url), completed: nil)
         
     }
     
