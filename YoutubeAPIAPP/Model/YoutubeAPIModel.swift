@@ -21,24 +21,24 @@ struct PageInfo: Codable{
 struct Item: Codable{
     let id: Id
     let snippet: Snippet
-}
-
-struct Id: Codable{
-    let videoId: String?
-}
-
-struct Snippet: Codable{
-    let title: String?
-    let thumbnails: Thumbnails
-    let channelTitle: String?
-}
-
-struct Thumbnails: Codable{
-    let high: Url
-}
-
-struct Url: Codable{
-    let url: String?
+    
+    struct Id: Codable{
+        let videoId: String?
+    }
+    
+    struct Snippet: Codable{
+        let title: String?
+        let thumbnails: Thumbnails
+        let channelTitle: String?
+    }
+    
+    struct Thumbnails: Codable{
+        let high: Url
+    }
+    
+    struct Url: Codable{
+        let url: String?
+    }
 }
 
 final class YoutubeAPIModel{
@@ -60,8 +60,6 @@ final class YoutubeAPIModel{
                 completionHandler(.failure(.parseError))
                 return
             }
-            
-            print(safeData)
             
             let decoder = JSONDecoder()
             
