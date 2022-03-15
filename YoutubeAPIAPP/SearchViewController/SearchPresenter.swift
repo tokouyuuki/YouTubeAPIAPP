@@ -7,24 +7,6 @@
 
 import Foundation
 
-enum ErrorTypeOfSearchVC{
-    case textIsEmpty
-    
-    var alertTitle: String{
-        switch self {
-        case .textIsEmpty:
-            return "検索キーワードが空です。"
-        }
-    }
-    
-    var alertMessege: String{
-        switch self {
-        case .textIsEmpty:
-            return "検索キーワードを入力してください。"
-        }
-    }
-    
-}
 
 protocol SearchViewPresenterInput{
     
