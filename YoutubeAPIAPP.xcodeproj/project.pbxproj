@@ -81,7 +81,7 @@
 			children = (
 				22CF2F2827E098BC006BC5F0 /* CustomCell */,
 				22CF2F2327E0853F006BC5F0 /* Model */,
-				22CF2F2027DFD1A2006BC5F0 /* WebViewController */,
+				22CF2F2027DFD1A2006BC5F0 /* PlayerViewController */,
 				22CF2F1B27DFD087006BC5F0 /* VideoListViewController */,
 				22CF2F1627DFD038006BC5F0 /* SearchViewController */,
 				22CF2F0227DF7AA8006BC5F0 /* AppDelegate.swift */,
@@ -112,12 +112,12 @@
 			path = VideoListViewController;
 			sourceTree = "<group>";
 		};
-		22CF2F2027DFD1A2006BC5F0 /* WebViewController */ = {
+		22CF2F2027DFD1A2006BC5F0 /* PlayerViewController */ = {
 			isa = PBXGroup;
 			children = (
 				22CF2F2127DFD29B006BC5F0 /* PlayerViewController.swift */,
 			);
-			path = WebViewController;
+			path = PlayerViewController;
 			sourceTree = "<group>";
 		};
 		22CF2F2327E0853F006BC5F0 /* Model */ = {
