@@ -7,4 +7,5 @@ target 'YoutubeAPIAPP' do
 
   # Pods for YoutubeAPIAPP
 pod 'SDWebImage'
+pod 'youtube-ios-player-helper'
 end

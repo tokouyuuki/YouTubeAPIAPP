@@ -1,18 +1,22 @@
 PODS:
-  - SDWebImage (5.11.1):
-    - SDWebImage/Core (= 5.11.1)
-  - SDWebImage/Core (5.11.1)
+  - SDWebImage (5.12.4):
+    - SDWebImage/Core (= 5.12.4)
+  - SDWebImage/Core (5.12.4)
+  - youtube-ios-player-helper (1.0.4)
 
 DEPENDENCIES:
   - SDWebImage
+  - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
     - SDWebImage
+    - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
-  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SDWebImage: 631cf572cc93dfdfe54162e556410a61f1141928
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
 
-PODFILE CHECKSUM: 99d0e8de60db3321d3952bfcd955af575401cb5d
+PODFILE CHECKSUM: 4830e105a75d9efd7d4b63d3fcfe93fa312a73b3
 
 COCOAPODS: 1.10.2
